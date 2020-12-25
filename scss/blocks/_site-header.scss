@@ -4,6 +4,8 @@
   left: 0;
   width: 100%;
   box-shadow: 0 0 2px 2px #ddd;
+  z-index: 9999;
+  background-color: #fff;
 }
 .site-header__inner {
   display: flex;
@@ -14,7 +16,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
 }
 .site-header__menu-btn {
   @include btn;
