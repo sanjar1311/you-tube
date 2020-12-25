@@ -433,18 +433,29 @@ img {
   background-size: contain;
   outline: none;
   cursor: pointer;
-  width: 30px;
-  height: 27px;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+  width: 35px;
+  height: 32px;
   background-color: transparent;
   background-image: url("../img/menu.svg");
-  background-size: 20px 17px;
+  background-size: 19px 16px;
   margin-right: 28px;
 }
 
+.site-header__menu-btn:active {
+  background-color: #eee;
+}
+
 .site-header__menu-btn:focus {
-  -webkit-box-shadow: 0 0 2px 2px #ddd;
-          box-shadow: 0 0 2px 2px #ddd;
-  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 2px #eee;
+          box-shadow: 0 0 2px 2px #eee;
+  background-color: #eee;
 }
 
 .site-header__right-side {
@@ -511,8 +522,8 @@ img {
 }
 
 .site-header__videocamera-btn {
-  width: 37px;
-  height: 30px;
+  width: 40px;
+  height: 33px;
   margin: 0;
   padding: 0;
   border: none;
@@ -522,42 +533,30 @@ img {
   background-size: contain;
   outline: none;
   cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
   background-image: url("../img/videocamera-icon.svg");
   margin-right: 50px;
-  background-size: 27px 20px;
+  background-size: 25px 18px;
+}
+
+.site-header__videocamera-btn:active {
+  background-color: #eee;
 }
 
 .site-header__videocamera-btn:focus {
-  -webkit-box-shadow: 0 0 2px 2px #ddd;
-          box-shadow: 0 0 2px 2px #ddd;
-  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 2px #eee;
+          box-shadow: 0 0 2px 2px #eee;
+  background-color: #eee;
 }
 
 .site-header__function-btn {
-  width: 31px;
-  height: 31px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  outline: none;
-  cursor: pointer;
-  background-image: url("../img/function-icon.svg");
-  margin-right: 50px;
-  background-size: 21px 21px;
-}
-
-.site-header__function-btn:focus {
-  -webkit-box-shadow: 0 0 2px 2px #ddd;
-          box-shadow: 0 0 2px 2px #ddd;
-  border-radius: 5px;
-}
-
-.site-header__notification-btn {
-  width: 38px;
+  width: 34px;
   height: 34px;
   margin: 0;
   padding: 0;
@@ -568,15 +567,60 @@ img {
   background-size: contain;
   outline: none;
   cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+  background-image: url("../img/function-icon.svg");
+  margin-right: 50px;
+  background-size: 19px 19px;
+}
+
+.site-header__function-btn:active {
+  background-color: #eee;
+}
+
+.site-header__function-btn:focus {
+  -webkit-box-shadow: 0 0 2px 2px #eee;
+          box-shadow: 0 0 2px 2px #eee;
+  background-color: #eee;
+}
+
+.site-header__notification-btn {
+  width: 41px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
   background-image: url("../img/notification-icon.svg");
   margin-right: 50px;
-  background-size: 30px 26px;
+  background-size: 28px 24px;
+}
+
+.site-header__notification-btn:active {
+  background-color: #eee;
 }
 
 .site-header__notification-btn:focus {
-  -webkit-box-shadow: 0 0 2px 2px #ddd;
-          box-shadow: 0 0 2px 2px #ddd;
-  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 2px #eee;
+          box-shadow: 0 0 2px 2px #eee;
+  background-color: #eee;
 }
 
 .site-header__user-menu-btn {
@@ -589,17 +633,28 @@ img {
   background-size: contain;
   outline: none;
   cursor: pointer;
-  width: 42px;
-  height: 42px;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+  width: 45px;
+  height: 45px;
   background-image: url("../img/user.png");
   border-radius: 20px !important;
-  background-size: 40px 40px;
+  background-size: 42px 42px;
+}
+
+.site-header__user-menu-btn:active {
+  background-color: #eee;
 }
 
 .site-header__user-menu-btn:focus {
-  -webkit-box-shadow: 0 0 2px 2px #ddd;
-          box-shadow: 0 0 2px 2px #ddd;
-  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 2px #eee;
+          box-shadow: 0 0 2px 2px #eee;
+  background-color: #eee;
 }
 
 @media only screen and (max-width: 850px) {

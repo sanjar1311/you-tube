@@ -18,11 +18,11 @@
 }
 .site-header__menu-btn {
   @include btn;
-  width: 30px;
-  height: 27px;
+  width: 35px;
+  height: 32px;
   background-color: transparent;
   background-image: url('../img/menu.svg');
-  background-size: 20px 17px;
+  background-size: 19px 16px;
   margin-right: 28px;
 }
 .site-header__right-side {
@@ -68,39 +68,39 @@
   align-items: center;
 }
 .site-header__videocamera-btn {
-  width: 37px;
-  height: 30px;
+  width: 40px;
+  height: 33px;
   @include btn;
   background-image: url("../img/videocamera-icon.svg");
   margin-right: 50px;
-  background-size: 27px 20px;
+  background-size: 25px 18px;
 }
 
 .site-header__function-btn {
-  width: 31px;
-  height: 31px;
+  width: 34px;
+  height: 34px;
   @include btn;
   background-image: url("../img/function-icon.svg");
   margin-right: 50px;
-  background-size: 21px 21px;
+  background-size: 19px 19px;
 }
 
 .site-header__notification-btn {
-  width: 38px;
-  height: 34px;
+  width: 41px;
+  height: 37px;
   @include btn;
   background-image: url("../img/notification-icon.svg");
   margin-right: 50px;
-  background-size: 30px 26px;
+  background-size: 28px 24px;
 }
 
 .site-header__user-menu-btn {
   @include btn;
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   background-image: url("../img/user.png");
   border-radius: 20px !important;
-  background-size: 40px 40px;
+  background-size: 42px 42px;
 }
 
 @media only screen and (max-width: 850px) {
