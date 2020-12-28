@@ -19,7 +19,7 @@
 
       <div class="site-header__right-side">
         <form class="site-header__form" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="site-header__input" type="search" placeholder="Search">
+          <input class="site-header__input" type="search" placeholder="Search" name="search">
           <button class="site-header__search-icon"></button>
         </form>
         <div class="site-header__buttons">
@@ -32,33 +32,97 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
+  <main class="main active">
+    <div class="main__inner">
       <div class="main__left-side left-side">
-        <button class="left-side__home-btn">Home</button>
-        <button class="left-side__trending-btn">Trending</button>
-        <button class="left-side__subscriptions-btn">Subscriptions</button>
-        <button class="left-side__library-btn">Library</button>
-        <button class="left-side__history-btn">History</button>
-        <button class="left-side__watch-later-btn">Watch later</button>
-        <button class="left-side__favourites-btn">Favourites</button>
-        <button class="left-side__liked-btn">Liked videos</button>
-        <button class="left-side__music-btn">Music</button>
-        <button class="left-side__games-btn">Games</button>
+        <button class="left-side__home-btn left-side__menu-btn">Home</button>
+        <button class="left-side__trending-btn left-side__menu-btn">Trending</button>
+        <button class="left-side__subscriptions-btn left-side__menu-btn">Subscriptions</button>
+        <button class="left-side__library-btn left-side__menu-btn">Library</button>
+        <button class="left-side__history-btn left-side__menu-btn">History</button>
+        <button class="left-side__watch-later-btn left-side__menu-btn">Watch later</button>
+        <button class="left-side__favourites-btn left-side__menu-btn">Favourites</button>
+        <button class="left-side__liked-btn left-side__menu-btn">Liked videos</button>
+        <button class="left-side__music-btn left-side__menu-btn">Music</button>
+        <button class="left-side__games-btn left-side__menu-btn">Games</button>
         <!-- <button class="">Show more</button> -->
 
-        <h4>Subscriptions</h4>
-        <a href="#">Gussie Singleton</a>
-        <a href="#">Nora Francis</a>
-        <a href="#">Belle Briggs</a>
-        <a href="#">Eunice Cortez</a>
-        <a href="#">Emma Hanson</a>
-        <a href="#">Leah Berry</a>
+        <h4 class="left-side__subscriptions-title">Subscriptions</h4>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Gussie Singleton</a>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Nora Francis</a>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Belle Briggs</a>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Eunice Cortez</a>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Emma Hanson</a>
+        <a class="left-side__subscribed left-side__subscriptions" href="#">Leah Berry</a>
 
-        <button class="settings-btn">Settings</button>
+        <button class="left-side__settings-btn">Settings</button>
       </div>
-      <div class="main__right-side">
 
+      <!-- =============================== -->
+
+      <div class="main__right-side right-side">
+        <div class="first-line">
+          <div class="first-line__inner">
+            <a href="#" class="firs-line__user">Dollie Blair</a>
+            <div class="first-line__slider-controllers">
+              <button class="first-line__slider-controller-left slider-btn"></button>
+              <button class="first-line__slider-controller-right slider-btn"></button>
+            </div>
+          </div>
+          <ul class="video">
+            <li class="video__item">
+              <a class="video__link" href="#">
+                <div class="video__inner">
+                  <img class="video__img" src="https://picsum.photos/250/150?random=2" width="250" height="150" alt="rasm">
+                  <span class="video__duration">4:15</span>
+                </div>
+                <h4 class="video__title">A Brief History Of Creation</h4>
+                <div class="video__info">
+                  <span class="video__wiews">80k views</span>
+                  <span class="video__time">3 days ago</span>
+                  <span class="video__author">Dollie Blair</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="video__item">
+              <a class="video__link" href="#">
+                <div class="video__inner">
+                  <img class="video__img" src="https://picsum.photos/250/150?random=2" width="250" height="150" alt="rasm">
+                  <span class="video__duration">4:15</span>
+                </div>
+                <h4 class="video__title">A Brief History Of Creation</h4>
+                <div class="video__info">
+                  <span class="video__wiews">80k views</span>
+                  <span class="video__time">3 days ago</span>
+                  <span class="video__author">Dollie Blair</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="video__item">
+              <a class="video__link" href="#">
+                <div class="video__inner">
+                  <img class="video__img" src="https://picsum.photos/250/150?random=2" width="250" height="150" alt="rasm">
+                  <span class="video__duration">4:15</span>
+                </div>
+                <h4 class="video__title">A Brief History Of Creation</h4>
+                <div class="video__info">
+                  <span class="video__wiews">80k views</span>
+                  <span class="video__time">3 days ago</span>
+                  <span class="video__author">Dollie Blair</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="recomended">
+
+        </div>
+        <div class="food">
+
+        </div>
       </div>
     </div>
   </main>
