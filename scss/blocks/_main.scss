@@ -1,8 +1,8 @@
  .main {
    width: 100%;
    max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
 }
 .main.active .left-side {
   width: 250px;
@@ -13,9 +13,6 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .main__inner {
-    flex-direction: column-reverse;
-    overflow: auto;
-    height: 100vh;
-  }
+
+
 }

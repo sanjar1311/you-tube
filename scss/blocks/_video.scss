@@ -3,9 +3,14 @@
   padding: 0;
   list-style: none;
   display: flex;
+  overflow-x: hidden;
+  // overflow-y: auto;
+  // width: 9999px;
+  height: auto;
 }
 
 .video__item {
+  min-width: 250px;
   margin-right: 40px;
 
   &:last-child {
@@ -14,6 +19,7 @@
 }
 
 .video__link {
+  width: 250px;
   text-decoration: none;
   color: #000;
   z-index: 10;
@@ -24,6 +30,7 @@
 }
 
 .video__img {
+  width: 250px;
   display: block;
   border-radius: 14px;
   margin-bottom: 10px;
@@ -57,4 +64,27 @@
 
 .video__author {
  margin-left: auto;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .video {
+    flex-direction: column;
+    overflow: none;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+  }
+  .video__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-right: auto;
+      margin-bottom: 61px;
+    }
+  }
 }

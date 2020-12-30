@@ -732,17 +732,6 @@ img {
   display: flex;
 }
 
-@media only screen and (max-width: 550px) {
-  .main__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    overflow: auto;
-    height: 100vh;
-  }
-}
-
 .left-side {
   -webkit-transition: width .3s ease;
   transition: width .3s ease;
@@ -955,8 +944,9 @@ img {
 @media only screen and (max-width: 550px) {
   .left-side {
     position: fixed;
-    left: o;
+    left: 0;
     bottom: 0;
+    z-index: 999;
     width: 100% !important;
     max-width: 100%;
     display: -webkit-box;
@@ -1023,7 +1013,15 @@ img {
           flex: 1;
   height: 87vh;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  .right-side {
+    padding-left: 0;
+  }
 }
 
 .first-line__inner {
@@ -1065,6 +1063,11 @@ img {
   margin-right: 20px;
 }
 
+.first-line__slider-controllers {
+  margin-left: auto;
+  margin-right: 110px;
+}
+
 .first-line__slider-controller-left {
   background-image: url("../img/left.svg");
 }
@@ -1086,6 +1089,22 @@ img {
   background-image: url("../img/right.svg");
 }
 
+@media only screen and (max-width: 700px) {
+  .first-line__slider-controllers {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .firs-line__user {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .first-line__slider-controllers {
+    display: none;
+  }
+}
+
 .video {
   margin: 0;
   padding: 0;
@@ -1093,9 +1112,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: hidden;
+  height: auto;
 }
 
 .video__item {
+  min-width: 250px;
   margin-right: 40px;
 }
 
@@ -1104,6 +1126,7 @@ img {
 }
 
 .video__link {
+  width: 250px;
   text-decoration: none;
   color: #000;
   z-index: 10;
@@ -1114,6 +1137,7 @@ img {
 }
 
 .video__img {
+  width: 250px;
   display: block;
   border-radius: 14px;
   margin-bottom: 10px;
@@ -1149,5 +1173,27 @@ img {
 
 .video__author {
   margin-left: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: none;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+  }
+  .video__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .video__item:last-child {
+    margin-right: auto;
+    margin-bottom: 61px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

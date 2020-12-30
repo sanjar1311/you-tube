@@ -113,8 +113,9 @@
  @media only screen and (max-width: 550px) {
   .left-side {
     position: fixed;
-    left: o;
+    left: 0;
     bottom: 0;
+    z-index: 999;
     width: 100% !important;
     max-width: 100%;
     display: flex;
