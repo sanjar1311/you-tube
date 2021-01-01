@@ -67,6 +67,7 @@ elMenuBtn.addEventListener('click', function() {
   elMain.classList.toggle('active');
 });
 
+    /* ========== Videos Output ========== */
 elGussie.addEventListener('click', function() {
   elFisrstLineList.innerHTML = '';
 
@@ -106,26 +107,22 @@ elGussie.addEventListener('click', function() {
   elFisrstLineList.appendChild(videoFragment);
 });
 
-
+        /* ======== Add Favourite ========= */
 elFisrstLineList.addEventListener('click', function(evt) {
 
   for(var i = 0; i < videos.length; i++) {
     if(evt.target.matches('.video__add')){
-      favourite.push(videos[1]);
+      favourite.push(videos[i]);
       console.log(favourite);
     }
    };
 
 });
 
+          /* ========= Output Favourites ========== */
 elFavouriteBtn.addEventListener('click', function(){
 
   elFavouriteList.innerHTML = '';
-
-  // elUserPic.classList.add('site-header__gussie');
-  // elFirstLineUser.textContent = 'Gussie Singleton';
-  // $_('.first-line__inner').classList.add('first-line__inner--active');
-
 
   var favouriteFragment = document.createDocumentFragment();
   var firstLineTemplate = $_('.first-line-template').content;
