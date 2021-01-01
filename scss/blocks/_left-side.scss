@@ -83,12 +83,28 @@
 .left-side__subscribed::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin-right: 13px;
-  background-image: url("https://picsum.photos/26/26?random=1");
+  background-position: center center;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
 }
+
+.js-gussie::before{
+  background-image: url("../img/user-1.webp");
+}
+.js-nora::before{
+  background-image: url("../img/user-2.jpg");
+}
+.js-belle::before{
+  background-image: url("../img/user-3.jpg");
+}
+.js-eunice::before{
+  background-image: url("../img/user-4.jpg");
+}
+
 .left-side__settings-btn {
   @include btn;
   display: flex;
