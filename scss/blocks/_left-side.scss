@@ -69,6 +69,9 @@
   text-align: center;
   font-size: 18px;
 }
+.left-side__collapse-btn::before {
+  background-image: url("../img/collapse-icon.svg");
+}
 .left-side__subscriptions {
   color: #898989;
   font-size: 16px;
