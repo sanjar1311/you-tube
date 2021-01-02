@@ -1058,6 +1058,14 @@ img {
   margin: 15px 30px 30px 0;
 }
 
+.first-line__inner--favourite {
+  display: none;
+}
+
+.first-line__inner--favo .first-line__inner--favourite {
+  display: block;
+}
+
 .firs-line__user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1180,10 +1188,16 @@ img {
   border-radius: 5px;
   padding: 4px 7px;
   color: #f9f9f9;
-  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url("../img/clock.svg");
+  background-position: center center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
 }
 
 .video__link {

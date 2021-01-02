@@ -67,18 +67,17 @@ elMenuBtn.addEventListener('click', function() {
   elMain.classList.toggle('active');
 });
 
-    /* ========== Videos Output ========== */
+/* ========== Videos Output ========== */
+
 elGussie.addEventListener('click', function() {
-  elFisrstLineList.innerHTML = '';
 
   elUserPic.classList.add('site-header__gussie');
   elFirstLineUser.textContent = 'Gussie Singleton';
   $_('.first-line__inner').classList.add('first-line__inner--active');
 
-
   var firstLineTemplate = $_('.first-line-template').content;
   var videoFragment = document.createDocumentFragment();
-
+  elFisrstLineList.innerHTML = '';
   for(var i = 0; i < videos.length; i++) {
     var firstLineItem = firstLineTemplate.cloneNode(true);
     var videoTitle = $_('.video__title', firstLineTemplate);
@@ -99,28 +98,38 @@ elGussie.addEventListener('click', function() {
     var videoImg = $_('.video__img', firstLineTemplate);
     videoImg.setAttribute('src', videos[i].img);
     var videoAddBtn = $_('.video__add', firstLineItem);
-    videoAddBtn.dataset.id++;
-    console.log(videoAddBtn.dataset.id);
+    videoAddBtn.dataset.id = i;
 
      videoFragment.appendChild(firstLineItem);
+
   }
   elFisrstLineList.appendChild(videoFragment);
+  console.log(elFisrstLineList)
 });
 
         /* ======== Add Favourite ========= */
 elFisrstLineList.addEventListener('click', function(evt) {
 
-  for(var i = 0; i < videos.length; i++) {
+  var firstLineTemplate = $_('.first-line-template').content;
+  var firstLine = firstLineTemplate.cloneNode(true);
+  var videoAdd = $_('.video__add', firstLine);
+  videoAdd.dataset.id;
+
+  for(var i = 2; i < videos.length; i++) {
+
+    // console.log(videos[i].id===videoAdd.dataset.id);
     if(evt.target.matches('.video__add')){
-      favourite.push(videos[i]);
-      console.log(favourite);
+      favourite.push(videos[i].id == videoAdd.dataset.id);
     }
-   };
+  }
 
 });
 
           /* ========= Output Favourites ========== */
 elFavouriteBtn.addEventListener('click', function(){
+
+  var elFavouriteSection = $_('.favourites');
+  elFavouriteSection.classList.add('first-line__inner--favo');
 
   elFavouriteList.innerHTML = '';
 

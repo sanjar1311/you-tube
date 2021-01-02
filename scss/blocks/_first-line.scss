@@ -5,6 +5,14 @@
   margin: 15px 30px 30px 0;
 }
 
+.first-line__inner--favourite {
+  display: none;
+}
+
+.first-line__inner--favo .first-line__inner--favourite {
+  display: block;
+}
+
 .firs-line__user{
   display: flex;
   align-items: center;
