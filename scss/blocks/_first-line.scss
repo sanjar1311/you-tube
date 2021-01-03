@@ -54,7 +54,7 @@
 }
 
 .first-line__favourites::before {
-  content: "F";
+  content: "W";
   text-align: center;
   line-height: 2;
   color: rgba(0, 0, 255,0.5);
@@ -78,10 +78,6 @@
   background-image: url("../img/right.svg");
 }
 
-.recomended {
-
-}
-
 @media only screen and (max-width: 700px) {
 
   .first-line__slider-controllers {
@@ -91,9 +87,6 @@
 
 @media only screen and (max-width: 550px) {
 
-  .first-line__inner {
-    // margin:50px 0 30px 0;
-  }
   .firs-line__user {
     margin-left: auto;
     margin-right: auto;

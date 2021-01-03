@@ -29,7 +29,7 @@ var elBelle = $_('.js-belle');
 var elEunice = $_('.js-eunice');
 var elUserPic = $_('.site-header__user-menu-btn');
 var elFirstLineUser = $_('.firs-line__user');
-var elFavouriteBtn = $_('.left-side__favourites-btn');
+var elWatchLater = $_('.left-side__watch-later-btn');
 var elFavouriteList = $_('.js-favourites__list');
 
 var videos = [
@@ -99,34 +99,37 @@ elGussie.addEventListener('click', function() {
     videoImg.setAttribute('src', videos[i].img);
     var videoAddBtn = $_('.video__add', firstLineItem);
     videoAddBtn.dataset.id = i;
+    console.log(videoAddBtn.dataset.id);
 
      videoFragment.appendChild(firstLineItem);
 
   }
   elFisrstLineList.appendChild(videoFragment);
   console.log(elFisrstLineList)
+
 });
 
-        /* ======== Add Favourite ========= */
+/* ======== Add Favourite ========= */
 elFisrstLineList.addEventListener('click', function(evt) {
 
   var firstLineTemplate = $_('.first-line-template').content;
   var firstLine = firstLineTemplate.cloneNode(true);
   var videoAdd = $_('.video__add', firstLine);
-  videoAdd.dataset.id;
 
-  for(var i = 2; i < videos.length; i++) {
-
-    // console.log(videos[i].id===videoAdd.dataset.id);
-    if(evt.target.matches('.video__add')){
-      favourite.push(videos[i].id == videoAdd.dataset.id);
+  if(evt.target.matches('.video__add')){
+    for(var i = 0; i < videos.length; i++) {
+      if(videos[i].id == evt.target.dataset.id){
+        favourite.push(videos[i]);
+      }
     }
   }
+  console.log(favourite);
 
 });
 
+
           /* ========= Output Favourites ========== */
-elFavouriteBtn.addEventListener('click', function(){
+elWatchLater.addEventListener('click', function(){
 
   var elFavouriteSection = $_('.favourites');
   elFavouriteSection.classList.add('first-line__inner--favo');

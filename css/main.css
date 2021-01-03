@@ -1115,7 +1115,7 @@ img {
 }
 
 .first-line__favourites::before {
-  content: "F";
+  content: "W";
   text-align: center;
   line-height: 2;
   color: rgba(0, 0, 255, 0.5);
@@ -1195,12 +1195,13 @@ img {
   opacity: 0;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
-  width: 25px;
+  width: 35px;
   height: 25px;
-  border-radius: 50%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/clock.svg");
   background-position: center center;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
 }
 

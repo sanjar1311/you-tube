@@ -34,14 +34,16 @@
   color: #f9f9f9;
   opacity: 0;
   transition: opacity .5s ease;
-  width: 25px;
+  width: 35px;
   height: 25px;
-  border-radius: 50%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/clock.svg");
   background-position: center center;
-  background-size: 25px 25px;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
 }
+
 
 .video__link {
   text-decoration: none;
