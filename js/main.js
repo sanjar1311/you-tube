@@ -34,15 +34,6 @@ var elFavouriteList = $_('.js-favourites__list');
 
 var videos = [
   {
-    title: 'Pirates of the Caribbean',
-    day: '14 days ago',
-    views: '80k views',
-    duration: '15:15',
-    author: 'Gussie Singleton',
-    img: 'img/user-1_1.webp',
-    id: 0
-  },
-  {
     title: 'Pirates of the Caribbean 5',
     day: '2 weeks ago',
     views: '1 view',
@@ -50,6 +41,15 @@ var videos = [
     author: 'Gussie Singleton',
     img: 'img/user-1_2.jpg',
     id: 1
+  },
+  {
+    title: 'Pirates of the Caribbean',
+    day: '14 days ago',
+    views: '80k views',
+    duration: '15:15',
+    author: 'Gussie Singleton',
+    img: 'img/user-1_1.webp',
+    id: 0
   },
   {
     title: 'Pirates of the Caribbean 6 Trailer',
@@ -68,6 +68,7 @@ elMenuBtn.addEventListener('click', function() {
 });
 
 var outputFunc = function(arrey) {
+
   elUserPic.classList.add('site-header__gussie');
   elFirstLineUser.textContent = 'Gussie Singleton';
   $_('.first-line__inner').classList.add('first-line__inner--active');
@@ -96,7 +97,8 @@ var outputFunc = function(arrey) {
     var videoImg = $_('.video__img', firstLineTemplate);
     videoImg.setAttribute('src', arrey[i].img);
     var videoAddBtn = $_('.video__add', firstLineItem);
-    videoAddBtn.dataset.id = i;
+    // videoAddBtn.setAttribute('dataset', arrey[i].id)
+    // videoAddBtn.dataset.id = ;
 
      videoFragment.appendChild(firstLineItem);
   }
